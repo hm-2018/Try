@@ -1,1 +1,44 @@
-hello
+1- git init "project"
+Initialized empty Git repository in C:/Users/Hmood/project/.git/
+
+2-C:\Users\Hmood>cd project
+C:\Users\Hmood\project>
+3-C:\Users\Hmood\project>git status
+On branch master
+
+4- after add file in folder we can check
+
+5C:\Users\Hmood\project>git status
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+6- C:\Users\Hmood\project>git add 1.txt
+
+7-C:\Users\Hmood\project>git commit -m"we daa 1.txt"
+[master (root-commit) c3237af] we daa 1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+8- i want check how branch 
+C:\Users\Hmood\project>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Hmood\project>git checkout master
+Already on 'master'
+
+9-C:\Users\Hmood\project>git branch subproject
+10-i want work on sub project 
+11- C:\Users\Hmood\project>git checkout subproject
+Switched to branch 'subproject'
+12-C:\Users\Hmood\project>git branch
+* master
+  subproject
+13 if you upload Repositre 
+
+C:\Users\Hmood\project>git remote add origin https://github.com/hm-2018/Try.git
+
+C:\Users\Hmood\project>git push -u origin master
